@@ -50,7 +50,7 @@ app.listen(process.env.PORT,async()=>{
         console.log("Cannot caonnect to db")
         console.log(error)
     }
-    console.log("server is running at port:",process.env.PORT)
+    console.log("server is running at port:",process.env.PORT);
 })
 
 

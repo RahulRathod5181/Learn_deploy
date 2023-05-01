@@ -34,7 +34,7 @@ userRoute.post("/login",async(req,res)=>{
                 // result == true
                 if(result){
                     const token = jwt.sign({ authorID:user._id, author:user.name}, 'life');  // {expiresIn:60*10} for session time
-                    res.status(200).send({msg:"Login Succesfull",token:token})
+                    res.status(200).send({msg:"Login Succesfull!!",token:token})
                 }else{
                     res.status(200).send({msg:"Wrong Credientials"})
                 }
